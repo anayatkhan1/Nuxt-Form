@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a.router-link-active {
+    @apply font-bold text-primary-600;
+}
+
+/* fix for markdown content code line wrap */
+/* Works on Firefox */
+pre {
+    white-space: pre-wrap;
+}
+
+/* Works on Chrome, Edge, and Safari */
+pre::-webkit-scrollbar {
+    white-space: pre-wrap;
+}
+pre::-webkit-scrollbar-track {
+    white-space: pre-wrap;
+}
